@@ -1,0 +1,241 @@
+/* LEFT PANEL */
+
+.left-panel {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray);
+}
+
+.container img {
+    position: absolute;
+    width: 210px;
+}
+
+.left-panel img {
+    top: 0;
+    left: 0;
+}
+
+.left-panel .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+    width: 100%;
+}
+
+.left-panel .content h1 {
+    color: white;
+    font-size: 3.17em;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+p {
+    text-align: center;
+    color: var(--light-gray);
+    font-size: 0.9em;
+    margin-bottom: 17px;
+}
+
+.left-panel .content a {
+    width: 100%;
+    max-width: 390px;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 30px;
+    outline: none;
+    transition: color 350ms;
+}
+
+.left-panel .content a:hover {
+    color: white;
+}
+
+/* LOGIN PANEL */
+
+.login-panel {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darker-gray);
+}
+
+.login-panel img {
+    bottom: 0;
+    right: 0;
+    filter: brightness(135%);
+}
+
+.login-panel img:last-of-type {
+    top: 0;
+    left: 0;
+    filter: brightness(135%);
+    display: none;
+}
+
+.login-panel form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.login-panel h2 {
+    font-weight: bold;
+    font-size: 3.1em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-panel a {
+    text-decoration: none;
+    color: var(--light-gray);
+    margin-bottom: 12px;
+    transition: filter 350ms;
+}
+
+.login-panel a:hover {
+    filter: brightness(120%);
+}
+
+.login-panel button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    margin-bottom: 17px;
+}
+
+.login-panel button:hover {
+    filter: brightness(80%);
+}
+
+.mobile-register {
+    display: none;
+}
+
+.mobile-register a {
+    width: 100%;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 30px;
+    outline: none;
+    transition: color 350ms !important;
+}
+
+.mobile-register a:hover {
+    filter: brightness(100%);
+    color: white;
+}
+
+.input-field input::placeholder {
+    color: var(--light-gray);
+}
+
+.input-field input {
+    color: #dadada;
+}
+
+.input-field input:focus  {
+    color: #ECECEC;
+}
+
+@media(max-height: 820px) {
+    img {
+        display: none !important;
+    }
+}
+
+@media(max-width: 1024px) {
+    .left-panel {
+        display: none;
+    }
+
+    .login-panel {
+        flex: 100%;
+    }
+
+    .login-panel img:last-of-type {
+        display: block;
+    }
+
+    .mobile-register {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    .login-panel .input-field {
+        height: 50px;
+    }
+
+    button {
+        height: 50px;
+    }
+
+    .mobile-register a {
+        height: 50px;
+    }
+
+    .login-panel .input-field {
+        padding: 0 .2rem;
+    }
+    
+    .login-panel h2 {
+        font-size: 2.9em;
+    }
+    
+    .input-field input {
+        width: 101%;
+    }
+}
+
+@media(max-width: 360px) {
+    .login-panel .input-field {
+        padding: 0 .9rem;
+    }
+
+    .input-field i {
+        margin-right: 12px;
+    }
+
+    .login-panel a {
+        text-align: center;
+    }
+
+    .login-panel h2 {
+        font-size: 2.7em;
+    }
+}

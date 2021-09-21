@@ -1,0 +1,97 @@
+.input-content {
+    display: grid;
+    grid-template-columns: 1fr 4.2fr;
+    align-items: center;
+}
+
+.input-content:first-of-type {
+    margin-top: 30px;
+}
+
+.input-field:first-of-type p {
+    display: flex;
+    margin-top: 10px;
+    color: var(--light-gray);
+    font-weight: lighter;
+    text-align: left;
+}
+
+.input-content .input-field {
+    margin: 0 0 30px 0;
+}
+
+.input-content .input-field select {
+    width: 100% !important;
+}
+
+.input-info {
+    display: flex;
+}
+
+.input-info label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-gray);
+    margin-left: 10px;
+    margin-bottom: -13px;
+    font-weight: lighter;
+}
+
+.input-info input:last-of-type {
+    text-align: center;
+    margin-left: 10px;
+    width: 65px;
+    padding: 13px 0;
+}
+
+.final-price-field {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.final-price-field label {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+} 
+
+.final-price-field input {
+    margin-left: auto;
+} 
+
+.input-content img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-color: var(--dark-gray);
+    box-shadow: 2px 2px 10px #141516;
+}
+
+.final-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.clean-fields-button {
+    max-width: 175px;
+    min-width: 175px;
+    border: 1px solid #cf4a4a;
+    background: none;
+    color: #cf4a4a;
+    transition: 350ms;
+    filter: brightness(100%) !important;
+}
+
+.clean-fields-button i {
+    margin-right: 10px;
+}
+
+.clean-fields-button:hover {
+    max-width: 195px;
+}

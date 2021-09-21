@@ -1,0 +1,11 @@
+1 - Trocar a senha do banco de dados no arquivo "ENV."
+
+2 - Dentro do MySQL, ir em "Server"->"Data import"->
+"Import from self-contained file" e importar o arquivo
+"binaryshop2database.sql".
+
+3 - Executar comando "php artisan config:cache" antes de 
+rodar o sistema, para limpar o cache e evitar conflitos.
+
+4 - Executar comando "php artisan serve" para 
+rodar o sistema.

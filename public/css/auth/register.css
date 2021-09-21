@@ -1,0 +1,252 @@
+/* RIGHT PANEL */
+
+.right-panel {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray);
+}
+
+.container img {
+    position: absolute;
+    width: 210px;
+    z-index: 1;
+}
+
+.right-panel img {
+    top: 0;
+    right: 0;
+}
+
+.right-panel .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+    width: 100%;
+}
+
+.right-panel .content h1 {
+    color: white;
+    font-size: 3.17em;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+p {
+    text-align: center;
+    color: var(--light-gray);
+    font-size: 0.9em;
+    margin-bottom: 17px;
+}
+
+.right-panel .content a {
+    width: 100%;
+    max-width: 390px;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 30px;
+    outline: none;
+    transition: color 350ms;
+}
+
+.right-panel .content a:hover {
+    color: white;
+}
+
+/* REGISTER PANEL */
+
+.register-panel {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darker-gray);
+}
+
+.register-panel img:first-of-type {
+    bottom: 0;
+    left: 0;
+    filter: brightness(135%);
+}
+
+.register-panel img:last-of-type {
+    top: 0;
+    right: 0;
+    filter: brightness(135%);
+}
+
+.register-panel form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    z-index: 2;
+}
+
+.register-panel h2 {
+    font-weight: bold;
+    font-size: 3.1em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register-panel a {
+    text-decoration: none;
+    color: var(--light-gray);
+    margin-bottom: 12px;
+    transition: filter 350ms;
+}
+
+.register-panel a:hover {
+    filter: brightness(120%);
+}
+
+.register-panel button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    margin-bottom: 17px;
+}
+
+.register-panel button:hover {
+    filter: brightness(80%);
+}
+
+.mobile-login {
+    display: none;
+}
+
+.mobile-login a {
+    width: 100%;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 30px;
+    outline: none;
+    transition: color 350ms;
+}
+
+.mobile-login a:hover {
+    filter: brightness(100%);
+    color: white;
+}
+
+.input-field input::placeholder {
+    color: var(--light-gray);
+}
+
+.input-field input {
+    color: #dadada;
+}
+
+.input-field input:focus  {
+    color: #ECECEC;
+}
+
+@media(max-height: 900px) and (max-width: 800px) {
+    img {
+        display: none !important;
+    }
+
+    .register-panel img:last-of-type {
+        display: none !important;
+    }
+}
+
+@media(max-height: 840px) {
+    img {
+        display: none !important;
+    }
+
+    .register-panel img:last-of-type {
+        display: none !important;
+    }
+}
+
+@media(max-width: 1024px) {
+    .right-panel {
+        display: none;
+    }
+
+    .register-panel {
+        flex: 100%;
+    }
+
+    .mobile-login {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    .register-panel .input-field {
+        height: 50px;
+    }
+
+    button {
+        height: 50px;
+    }
+
+    .mobile-login a {
+        height: 50px;
+    }
+
+    .register-panel .input-field {
+        padding: 0 .2rem;
+    }
+
+    .register-panel h2 {
+        font-size: 2.9em;
+    }
+
+    .input-field input {
+        width: 101%;
+    }
+}
+
+@media(max-width: 360px) {
+    .register-panel .input-field {
+        padding: 0 .9rem;
+    }
+
+    .input-field i {
+        margin-right: 12px;
+    }
+
+    .register-panel a {
+        text-align: center;
+    }
+
+    .register-panel h2 {
+        font-size: 2.6em;
+    }
+}

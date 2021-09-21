@@ -1,0 +1,56 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
+    margin: 30px auto;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    cursor: pointer;
+    background-color: var(--dark-gray);
+    transition: transform 120ms;
+    box-shadow: 0 0 5px #141516;
+    white-space: nowrap;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img{
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card label {
+    font-size: 1em;
+    color: #aaaaaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card h3 {
+    margin: 7px 0 9px 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #dadada;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card p {
+    font-size: 1em;
+    color: var(--green);
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-info {
+    padding: 0 20px 10px 20px;
+}

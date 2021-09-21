@@ -1,0 +1,70 @@
+.input-field {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin: 30px auto;
+}
+
+
+.input-field label {
+    display: flex;
+    justify-content: flex-start;
+    color: #dadada;
+    text-align: left;
+}
+
+input, textarea, select {
+    display: flex;
+    justify-content: flex-start;
+    outline-offset: -0.5px;
+    outline-color: #AAAAAA;
+    margin-top: 10px;
+    border: 1px solid var(--gray);
+    outline: none;
+    padding: 13px;
+    font-size: 16px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    color: #dadada;
+}
+
+.price {
+    width: 160px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid var(--light-gray);
+}
+
+select {
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    background: var(--dark-gray) url('https://meritocracy.is/blog/wp-content/uploads/2019/01/grey-down-arrow-icon-png-1.png');
+	background-repeat:no-repeat;
+	background-size: 11px;
+    background-position: right 0.8em center;
+}
+
+select:invalid {
+    color: #777777;
+}
+
+option:not(:first-child) {
+    color: #dadada;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.delete {
+    margin-top: 20px;
+    background-color: #cf4a4a;
+}
+
+#form-delete {
+    display: none;
+}
